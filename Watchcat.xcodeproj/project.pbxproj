@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A900FF5524A9676300846681 /* ReSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A900FF5424A9676300846681 /* ReSwift */; };
 		A98309C524A85144001EDC26 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98309C424A85144001EDC26 /* Tests_iOS.swift */; };
 		A98309D024A85144001EDC26 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98309CF24A85144001EDC26 /* Tests_macOS.swift */; };
 		A98309D224A85144001EDC26 /* WatchcatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98309A924A85143001EDC26 /* WatchcatApp.swift */; };
@@ -60,6 +61,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A98309E924A852D6001EDC26 /* HomeKit.framework in Frameworks */,
+				A900FF5524A9676300846681 /* ReSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +183,9 @@
 			dependencies = (
 			);
 			name = iOS;
+			packageProductDependencies = (
+				A900FF5424A9676300846681 /* ReSwift */,
+			);
 			productName = iOS;
 			productReference = A98309B024A85144001EDC26 /* Watchcat.app */;
 			productType = "com.apple.product-type.application";
@@ -272,6 +277,9 @@
 				Base,
 			);
 			mainGroup = A98309A324A85143001EDC26;
+			packageReferences = (
+				A900FF5324A9676300846681 /* XCRemoteSwiftPackageReference "ReSwift" */,
+			);
 			productRefGroup = A98309B124A85144001EDC26 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -714,6 +722,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A900FF5324A9676300846681 /* XCRemoteSwiftPackageReference "ReSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReSwift/ReSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A900FF5424A9676300846681 /* ReSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A900FF5324A9676300846681 /* XCRemoteSwiftPackageReference "ReSwift" */;
+			productName = ReSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A98309A424A85143001EDC26 /* Project object */;
 }
