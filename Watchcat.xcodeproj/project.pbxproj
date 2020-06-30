@@ -10,11 +10,11 @@
 		A900FF5524A9676300846681 /* ReSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A900FF5424A9676300846681 /* ReSwift */; };
 		A900FF5924A9B61500846681 /* HomeListStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A900FF5824A9B61500846681 /* HomeListStore.swift */; };
 		A900FF5B24A9B67C00846681 /* HomeListState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A900FF5A24A9B67C00846681 /* HomeListState.swift */; };
-		A900FF5E24AA148600846681 /* HomeActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A900FF5D24AA148600846681 /* HomeActions.swift */; };
+		A900FF5E24AA148600846681 /* HomeListActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A900FF5D24AA148600846681 /* HomeListActions.swift */; };
 		A900FF6024AA14A700846681 /* HomeListReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A900FF5F24AA14A700846681 /* HomeListReducer.swift */; };
-		A900FF7024AA1D6100846681 /* HomeActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A900FF5D24AA148600846681 /* HomeActions.swift */; };
+		A900FF7024AA1D6100846681 /* HomeListActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A900FF5D24AA148600846681 /* HomeListActions.swift */; };
 		A900FF7724AA24E500846681 /* HomeManagerDelegateHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A900FF7624AA24E500846681 /* HomeManagerDelegateHandler.swift */; };
-		A900FF7924AA30C000846681 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = A900FF7824AA30C000846681 /* Store.swift */; };
+		A900FF7924AA30C000846681 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = A900FF7824AA30C000846681 /* State.swift */; };
 		A900FF7B24AA3A5D00846681 /* HomeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A900FF7A24AA3A5D00846681 /* HomeList.swift */; };
 		A915509524AABB4F00F336A0 /* ObservableState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A915509424AABB4F00F336A0 /* ObservableState.swift */; };
 		A98309C524A85144001EDC26 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98309C424A85144001EDC26 /* Tests_iOS.swift */; };
@@ -25,6 +25,12 @@
 		A98309D624A85144001EDC26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A98309AB24A85144001EDC26 /* Assets.xcassets */; };
 		A98309D724A85144001EDC26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A98309AB24A85144001EDC26 /* Assets.xcassets */; };
 		A98309E924A852D6001EDC26 /* HomeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A98309E824A852D6001EDC26 /* HomeKit.framework */; };
+		A98D3B9024AB91B500507E0F /* SensorBookmarkListState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98D3B8F24AB91B500507E0F /* SensorBookmarkListState.swift */; };
+		A98D3B9224AB91F900507E0F /* SensorBookmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98D3B9124AB91F900507E0F /* SensorBookmark.swift */; };
+		A98D3B9424AB927400507E0F /* SensorBookmarkListStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98D3B9324AB927400507E0F /* SensorBookmarkListStore.swift */; };
+		A98D3B9624AB92A500507E0F /* SensorBookmarkListReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98D3B9524AB92A500507E0F /* SensorBookmarkListReducer.swift */; };
+		A9E8CA8324AC101D005A9D6C /* SensorBookmarkListActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E8CA8224AC101D005A9D6C /* SensorBookmarkListActions.swift */; };
+		A9E8CA8424AC101D005A9D6C /* SensorBookmarkListActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E8CA8224AC101D005A9D6C /* SensorBookmarkListActions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,10 +53,10 @@
 /* Begin PBXFileReference section */
 		A900FF5824A9B61500846681 /* HomeListStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListStore.swift; sourceTree = "<group>"; };
 		A900FF5A24A9B67C00846681 /* HomeListState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListState.swift; sourceTree = "<group>"; };
-		A900FF5D24AA148600846681 /* HomeActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeActions.swift; sourceTree = "<group>"; };
+		A900FF5D24AA148600846681 /* HomeListActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListActions.swift; sourceTree = "<group>"; };
 		A900FF5F24AA14A700846681 /* HomeListReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListReducer.swift; sourceTree = "<group>"; };
 		A900FF7624AA24E500846681 /* HomeManagerDelegateHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeManagerDelegateHandler.swift; sourceTree = "<group>"; };
-		A900FF7824AA30C000846681 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		A900FF7824AA30C000846681 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 		A900FF7A24AA3A5D00846681 /* HomeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeList.swift; sourceTree = "<group>"; };
 		A915509424AABB4F00F336A0 /* ObservableState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableState.swift; sourceTree = "<group>"; };
 		A98309A924A85143001EDC26 /* WatchcatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchcatApp.swift; sourceTree = "<group>"; };
@@ -69,6 +75,11 @@
 		A98309D124A85144001EDC26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A98309E624A85154001EDC26 /* Watchcat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Watchcat.entitlements; sourceTree = "<group>"; };
 		A98309E824A852D6001EDC26 /* HomeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HomeKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/HomeKit.framework; sourceTree = DEVELOPER_DIR; };
+		A98D3B8F24AB91B500507E0F /* SensorBookmarkListState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorBookmarkListState.swift; sourceTree = "<group>"; };
+		A98D3B9124AB91F900507E0F /* SensorBookmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorBookmark.swift; sourceTree = "<group>"; };
+		A98D3B9324AB927400507E0F /* SensorBookmarkListStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorBookmarkListStore.swift; sourceTree = "<group>"; };
+		A98D3B9524AB92A500507E0F /* SensorBookmarkListReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorBookmarkListReducer.swift; sourceTree = "<group>"; };
+		A9E8CA8224AC101D005A9D6C /* SensorBookmarkListActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorBookmarkListActions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				A900FF7A24AA3A5D00846681 /* HomeList.swift */,
+				A98D3B9124AB91F900507E0F /* SensorBookmark.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -118,7 +130,9 @@
 			children = (
 				A900FF5824A9B61500846681 /* HomeListStore.swift */,
 				A900FF5A24A9B67C00846681 /* HomeListState.swift */,
-				A900FF7824AA30C000846681 /* Store.swift */,
+				A98D3B9324AB927400507E0F /* SensorBookmarkListStore.swift */,
+				A98D3B8F24AB91B500507E0F /* SensorBookmarkListState.swift */,
+				A900FF7824AA30C000846681 /* State.swift */,
 			);
 			path = State;
 			sourceTree = "<group>";
@@ -126,7 +140,8 @@
 		A900FF6F24AA1D5C00846681 /* Actions */ = {
 			isa = PBXGroup;
 			children = (
-				A900FF5D24AA148600846681 /* HomeActions.swift */,
+				A900FF5D24AA148600846681 /* HomeListActions.swift */,
+				A9E8CA8224AC101D005A9D6C /* SensorBookmarkListActions.swift */,
 			);
 			path = Actions;
 			sourceTree = "<group>";
@@ -135,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				A900FF5F24AA14A700846681 /* HomeListReducer.swift */,
+				A98D3B9524AB92A500507E0F /* SensorBookmarkListReducer.swift */,
 			);
 			path = Reducers;
 			sourceTree = "<group>";
@@ -411,15 +427,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				A900FF5B24A9B67C00846681 /* HomeListState.swift in Sources */,
+				A98D3B9424AB927400507E0F /* SensorBookmarkListStore.swift in Sources */,
 				A98309D424A85144001EDC26 /* ContentView.swift in Sources */,
 				A900FF7724AA24E500846681 /* HomeManagerDelegateHandler.swift in Sources */,
+				A98D3B9624AB92A500507E0F /* SensorBookmarkListReducer.swift in Sources */,
 				A900FF7B24AA3A5D00846681 /* HomeList.swift in Sources */,
-				A900FF7924AA30C000846681 /* Store.swift in Sources */,
+				A98D3B9024AB91B500507E0F /* SensorBookmarkListState.swift in Sources */,
+				A900FF7924AA30C000846681 /* State.swift in Sources */,
 				A900FF5924A9B61500846681 /* HomeListStore.swift in Sources */,
+				A98D3B9224AB91F900507E0F /* SensorBookmark.swift in Sources */,
 				A98309D224A85144001EDC26 /* WatchcatApp.swift in Sources */,
-				A900FF5E24AA148600846681 /* HomeActions.swift in Sources */,
+				A900FF5E24AA148600846681 /* HomeListActions.swift in Sources */,
 				A915509524AABB4F00F336A0 /* ObservableState.swift in Sources */,
 				A900FF6024AA14A700846681 /* HomeListReducer.swift in Sources */,
+				A9E8CA8324AC101D005A9D6C /* SensorBookmarkListActions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,7 +449,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A98309D324A85144001EDC26 /* WatchcatApp.swift in Sources */,
-				A900FF7024AA1D6100846681 /* HomeActions.swift in Sources */,
+				A900FF7024AA1D6100846681 /* HomeListActions.swift in Sources */,
+				A9E8CA8424AC101D005A9D6C /* SensorBookmarkListActions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

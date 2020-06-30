@@ -10,8 +10,6 @@ import ReSwift
 
 typealias HomeListStore = Store<HomeListState>
 
-typealias Action = ReSwift.Action
-
 func homeListStore() -> HomeListStore {
     return HomeListStore(reducer: homeListReducer, state: nil)
 }
