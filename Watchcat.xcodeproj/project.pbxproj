@@ -17,6 +17,8 @@
 		A900FF7924AA30C000846681 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = A900FF7824AA30C000846681 /* State.swift */; };
 		A900FF7B24AA3A5D00846681 /* HomeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A900FF7A24AA3A5D00846681 /* HomeList.swift */; };
 		A915509524AABB4F00F336A0 /* ObservableState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A915509424AABB4F00F336A0 /* ObservableState.swift */; };
+		A94531B724B08042003C8D4C /* DockInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94531B624B08042003C8D4C /* DockInterface.swift */; };
+		A94531BB24B0881C003C8D4C /* DockAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94531BA24B0881C003C8D4C /* DockAdapter.swift */; };
 		A98309C524A85144001EDC26 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98309C424A85144001EDC26 /* Tests_iOS.swift */; };
 		A98309D024A85144001EDC26 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98309CF24A85144001EDC26 /* Tests_macOS.swift */; };
 		A98309D224A85144001EDC26 /* WatchcatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98309A924A85143001EDC26 /* WatchcatApp.swift */; };
@@ -81,6 +83,11 @@
 		A900FF7824AA30C000846681 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 		A900FF7A24AA3A5D00846681 /* HomeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeList.swift; sourceTree = "<group>"; };
 		A915509424AABB4F00F336A0 /* ObservableState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableState.swift; sourceTree = "<group>"; };
+		A94531B524B08041003C8D4C /* AppKitGlue-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppKitGlue-Bridging-Header.h"; sourceTree = "<group>"; };
+		A94531B624B08042003C8D4C /* DockInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DockInterface.swift; sourceTree = "<group>"; };
+		A94531B824B086C1003C8D4C /* DockInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DockInterface.h; sourceTree = "<group>"; };
+		A94531BA24B0881C003C8D4C /* DockAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DockAdapter.swift; sourceTree = "<group>"; };
+		A94531BC24B088A9003C8D4C /* Watchcat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Watchcat-Bridging-Header.h"; sourceTree = "<group>"; };
 		A98309A924A85143001EDC26 /* WatchcatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchcatApp.swift; sourceTree = "<group>"; };
 		A98309AA24A85143001EDC26 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A98309AB24A85144001EDC26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -186,12 +193,12 @@
 			path = Reducers;
 			sourceTree = "<group>";
 		};
-		A900FF7224AA1F9300846681 /* Views */ = {
+		A900FF7224AA1F9300846681 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				A98309AA24A85143001EDC26 /* ContentView.swift */,
 			);
-			path = Views;
+			path = View;
 			sourceTree = "<group>";
 		};
 		A900FF7524AA24C200846681 /* DelegateHandlers */ = {
@@ -208,6 +215,14 @@
 				A915509424AABB4F00F336A0 /* ObservableState.swift */,
 			);
 			path = ObservedObject;
+			sourceTree = "<group>";
+		};
+		A94531B924B08807003C8D4C /* Dock */ = {
+			isa = PBXGroup;
+			children = (
+				A94531BA24B0881C003C8D4C /* DockAdapter.swift */,
+			);
+			path = Dock;
 			sourceTree = "<group>";
 		};
 		A98309A324A85143001EDC26 = {
@@ -233,8 +248,11 @@
 				A915509324AABB3F00F336A0 /* ObservedObject */,
 				A900FF7124AA1D6E00846681 /* Reducers */,
 				A900FF5724A9B60B00846681 /* State */,
-				A900FF7224AA1F9300846681 /* Views */,
+				A94531B924B08807003C8D4C /* Dock */,
+				A900FF7224AA1F9300846681 /* View */,
 				A98309A924A85143001EDC26 /* WatchcatApp.swift */,
+				A94531B824B086C1003C8D4C /* DockInterface.h */,
+				A94531BC24B088A9003C8D4C /* Watchcat-Bridging-Header.h */,
 				A98309AB24A85144001EDC26 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -300,6 +318,8 @@
 			isa = PBXGroup;
 			children = (
 				A9A2B17D24B06FCD0022FEE5 /* Info.plist */,
+				A94531B624B08042003C8D4C /* DockInterface.swift */,
+				A94531B524B08041003C8D4C /* AppKitGlue-Bridging-Header.h */,
 			);
 			path = AppKitGlue;
 			sourceTree = "<group>";
@@ -424,6 +444,7 @@
 					};
 					A9A2B17A24B06FCD0022FEE5 = {
 						CreatedOnToolsVersion = 12.0;
+						LastSwiftMigration = 1200;
 					};
 				};
 			};
@@ -508,6 +529,7 @@
 				A900FF5924A9B61500846681 /* HomeListStore.swift in Sources */,
 				A98D3B9224AB91F900507E0F /* SensorBookmark.swift in Sources */,
 				A98309D224A85144001EDC26 /* WatchcatApp.swift in Sources */,
+				A94531BB24B0881C003C8D4C /* DockAdapter.swift in Sources */,
 				A900FF5E24AA148600846681 /* HomeListActions.swift in Sources */,
 				A915509524AABB4F00F336A0 /* ObservableState.swift in Sources */,
 				A900FF6024AA14A700846681 /* HomeListReducer.swift in Sources */,
@@ -545,6 +567,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A94531B724B08042003C8D4C /* DockInterface.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -683,6 +706,7 @@
 		A98309DB24A85144001EDC26 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = iOS/Watchcat.entitlements;
@@ -699,6 +723,7 @@
 				PRODUCT_NAME = Watchcat;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Shared/Watchcat-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -707,6 +732,7 @@
 		A98309DC24A85144001EDC26 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = iOS/Watchcat.entitlements;
@@ -723,6 +749,7 @@
 				PRODUCT_NAME = Watchcat;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Shared/Watchcat-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -869,16 +896,25 @@
 		A9A2B17E24B06FCD0022FEE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 788YH48Y3Q;
 				INFOPLIST_FILE = AppKitGlue/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.16;
 				PRODUCT_BUNDLE_IDENTIFIER = TETRA2000.AppKitGlue;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "AppKitGlue/AppKitGlue-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -886,16 +922,24 @@
 		A9A2B17F24B06FCD0022FEE5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 788YH48Y3Q;
 				INFOPLIST_FILE = AppKitGlue/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.16;
 				PRODUCT_BUNDLE_IDENTIFIER = TETRA2000.AppKitGlue;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "AppKitGlue/AppKitGlue-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;

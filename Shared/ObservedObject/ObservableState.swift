@@ -39,12 +39,6 @@ public class ObservableState<T>: ObservableObject where T: StateType {
     internal func dispatch(_ action: Action) {
         store.dispatch(action)
     }
-
-    internal func dispatch(_ action: Action) -> () -> Void {
-        {
-            self.store.dispatch(action)
-        }
-    }
 }
 
 extension ObservableState: StoreSubscriber {

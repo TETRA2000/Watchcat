@@ -19,7 +19,10 @@ struct ContentView: View {
                     Text(home.name)
                 }
             }
-        }.onAppear(perform: state.dispatch(RequestToUpdateHomeListAction()))
+        }.onAppear(perform: {
+            state.dispatch(RequestToUpdateHomeListAction())
+            DockAdapter.controller?.updateBadge("Yeah!")
+        })
     }
 }
 
