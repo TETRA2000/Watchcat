@@ -14,7 +14,7 @@ class HomeManagerDelegateHandler: NSObject {
         if let obj = _shared {
             return obj
         } else {
-            let obj = HomeManagerDelegateHandler.init(store: mainHomeListStore)
+            let obj = HomeManagerDelegateHandler.init(store: mainState.homeList)
             _shared = obj
             return obj
         }

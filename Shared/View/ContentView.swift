@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @ObservedObject private var state = ObservableState(store: mainHomeListStore)
+    @ObservedObject private var state = ObservableState(store: mainState.homeList)
 
     var body: some View {
         NavigationView {
@@ -19,7 +19,10 @@ struct ContentView: View {
                     Text(home.name)
                 }
             }
-        }.onAppear(perform: state.dispatch(RequestToUpdateHomeListAction()))
+        }.onAppear(perform: {
+            state.dispatch(RequestToUpdateHomeListAction())
+            DockAdapter.controller?.updateBadge("Yeah!")
+        })
     }
 }
 
