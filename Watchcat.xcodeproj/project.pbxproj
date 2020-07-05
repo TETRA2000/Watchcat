@@ -27,7 +27,7 @@
 		A98D3B9224AB91F900507E0F /* SensorBookmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98D3B9124AB91F900507E0F /* SensorBookmark.swift */; };
 		A98D3B9424AB927400507E0F /* SensorBookmarkListStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98D3B9324AB927400507E0F /* SensorBookmarkListStore.swift */; };
 		A98D3B9624AB92A500507E0F /* SensorBookmarkListReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98D3B9524AB92A500507E0F /* SensorBookmarkListReducer.swift */; };
-		A9A2B18124B06FE60022FEE5 /* AppKitGlue.bundle in Embed PlugIns */ = {isa = PBXBuildFile; fileRef = A9A2B17B24B06FCD0022FEE5 /* AppKitGlue.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A9A2B18124B06FE60022FEE5 /* AppKitGlue.bundle in Embed PlugIns */ = {isa = PBXBuildFile; fileRef = A9A2B17B24B06FCD0022FEE5 /* AppKitGlue.bundle */; platformFilter = maccatalyst; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A9E8CA8324AC101D005A9D6C /* SensorBookmarkListActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E8CA8224AC101D005A9D6C /* SensorBookmarkListActions.swift */; };
 /* End PBXBuildFile section */
 
@@ -450,6 +450,7 @@
 		};
 		A9A2B18324B06FE60022FEE5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = maccatalyst;
 			target = A9A2B17A24B06FCD0022FEE5 /* AppKitGlue */;
 			targetProxy = A9A2B18224B06FE60022FEE5 /* PBXContainerItemProxy */;
 		};
