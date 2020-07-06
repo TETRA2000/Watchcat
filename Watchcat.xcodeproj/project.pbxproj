@@ -27,6 +27,7 @@
 		A98D3B9224AB91F900507E0F /* SensorBookmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98D3B9124AB91F900507E0F /* SensorBookmark.swift */; };
 		A98D3B9424AB927400507E0F /* SensorBookmarkListStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98D3B9324AB927400507E0F /* SensorBookmarkListStore.swift */; };
 		A98D3B9624AB92A500507E0F /* SensorBookmarkListReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98D3B9524AB92A500507E0F /* SensorBookmarkListReducer.swift */; };
+		A99FAD9624B3EAB700DEDC19 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A99FAD9524B3EAB700DEDC19 /* CloudKit.framework */; };
 		A9A2B18124B06FE60022FEE5 /* AppKitGlue.bundle in Embed PlugIns */ = {isa = PBXBuildFile; fileRef = A9A2B17B24B06FCD0022FEE5 /* AppKitGlue.bundle */; platformFilter = maccatalyst; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A9E8CA8324AC101D005A9D6C /* SensorBookmarkListActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E8CA8224AC101D005A9D6C /* SensorBookmarkListActions.swift */; };
 /* End PBXBuildFile section */
@@ -90,6 +91,7 @@
 		A98D3B9124AB91F900507E0F /* SensorBookmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorBookmark.swift; sourceTree = "<group>"; };
 		A98D3B9324AB927400507E0F /* SensorBookmarkListStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorBookmarkListStore.swift; sourceTree = "<group>"; };
 		A98D3B9524AB92A500507E0F /* SensorBookmarkListReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorBookmarkListReducer.swift; sourceTree = "<group>"; };
+		A99FAD9524B3EAB700DEDC19 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
 		A9A2B17B24B06FCD0022FEE5 /* AppKitGlue.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppKitGlue.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9A2B17D24B06FCD0022FEE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9E8CA8224AC101D005A9D6C /* SensorBookmarkListActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorBookmarkListActions.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A99FAD9624B3EAB700DEDC19 /* CloudKit.framework in Frameworks */,
 				A98309E924A852D6001EDC26 /* HomeKit.framework in Frameworks */,
 				A900FF5524A9676300846681 /* ReSwift in Frameworks */,
 			);
@@ -255,6 +258,7 @@
 		A98309E724A852D6001EDC26 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A99FAD9524B3EAB700DEDC19 /* CloudKit.framework */,
 				A98309E824A852D6001EDC26 /* HomeKit.framework */,
 			);
 			name = Frameworks;
